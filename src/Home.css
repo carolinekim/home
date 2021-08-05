@@ -1,0 +1,71 @@
+.homeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.aboutContainer {
+  background-color: #edc7b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContainer:hover {
+  opacity: 0.3;
+}
+
+.experienceContainer {
+  background-color: #eee2dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experienceContainer:hover {
+  opacity: 0.3;
+}
+
+.projectContainer {
+  background-color: #bab2b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectContainer:hover {
+  opacity: 0.3;
+}
+
+.loveContainer {
+  background-color: #123c69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loveContainer:hover {
+  opacity: 0.3;
+}
+
+.miscContainer {
+  background-color: #ac3b61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.miscContainer:hover {
+  opacity: 0.3;
+}
+
+.contactContainer {
+  background-color: #c2dace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactContainer:hover {
+  opacity: 0.3;
+}

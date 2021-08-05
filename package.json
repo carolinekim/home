@@ -1,8 +1,8 @@
 {
-  "name": "home",
+  "name": "web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://carolinekim.github.io/home",
+  "homepage": "https://carolinekim.github.io/web",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

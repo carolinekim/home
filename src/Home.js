@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
 import './Home.css';
 import { BsHeart, BsLaptop } from 'react-icons/bs';
 import { FaProjectDiagram } from 'react-icons/fa';
@@ -6,47 +7,51 @@ import { CgGirl } from 'react-icons/cg';
 import { VscSymbolMisc } from 'react-icons/vsc';
 import { AiOutlineMail } from 'react-icons/ai';
 
+
 const Home = () => {
+  const history = useHistory();
+  const handlePageClick = useCallback(container => history.push(`/${container}`), [history]);
+
   return (
     <div className="homeContainer">
-      <div className="aboutContainer">
+      <div className="aboutContainer" onClick={() => handlePageClick('about')}>
         <div className="about">
-          <CgGirl />
+          <CgGirl className="icons" />
           <br/>
           <span>ABOUT</span>
         </div>
       </div>
-      <div className="experienceContainer">
+      <div className="experienceContainer" onClick={() => handlePageClick('experience')}>
         <div>
-          <BsLaptop />
+          <BsLaptop className="icons experienceIcon"/>
           <br/>
           <span>EXPERIENCE</span>
         </div>
       </div>
-      <div className="projectContainer">
+      <div className="projectContainer" onClick={() => handlePageClick('projects')}>
         <div>
-          <FaProjectDiagram />
+          <FaProjectDiagram className="icons projectIcon" />
           <br/>
           <span>PROJECTS</span>
         </div>
       </div>
-      <div className="loveContainer">
+      <div className="loveContainer" onClick={() => handlePageClick('love')}>
         <div>
-          <BsHeart />
+          <BsHeart className="icons loveIcon" />
           <br/>
           <span>LOVE</span>
         </div>
       </div>
-      <div className="miscContainer">
+      <div className="miscContainer" onClick={() => handlePageClick('misc')}>
         <div>
-          <VscSymbolMisc />
+          <VscSymbolMisc className="icons miscIcon" />
           <br/>
           <span>MISC</span>
         </div>
       </div>
-      <div className="contactContainer">
+      <div className="contactContainer" onClick={() => handlePageClick('contact')}>
         <div>
-          <AiOutlineMail />
+          <AiOutlineMail className="icons contactIcon" />
           <br/>
           <span>CONTACT</span>
         </div>

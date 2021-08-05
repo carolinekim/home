@@ -1,12 +1,11 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
-import './Home.css';
+import './styles/Home.css';
 import { BsHeart, BsLaptop } from 'react-icons/bs';
 import { FaProjectDiagram } from 'react-icons/fa';
 import { CgGirl } from 'react-icons/cg';
 import { VscSymbolMisc } from 'react-icons/vsc';
 import { AiOutlineMail } from 'react-icons/ai';
-
 
 const Home = () => {
   const history = useHistory();
